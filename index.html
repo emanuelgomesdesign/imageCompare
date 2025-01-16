@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Comparison App</h1>
+
+        <div class="upload-area">
+            <div class="upload-box">
+                <label for="original-image">Select Original Image:</label>
+                <input type="file" id="original-image" accept="image/*">
+            </div>
+            <div class="upload-box">
+                <label for="derived-images">Select Derived Images:</label>
+                <input type="file" id="derived-images" accept="image/*" multiple>
+            </div>
+            <button id="compare-button">Compare</button>
+        </div>
+
+
+        <div class="results-container">
+          <h2>Results</h2>
+          <div id="comparison-results">
+              <!-- Images and comparison data will be shown here -->
+          </div>
+        </div>
+
+        <div class="report-area">
+            <pre id="report"></pre>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
